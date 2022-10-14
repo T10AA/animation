@@ -12,6 +12,8 @@
 	top: 400px;
 	right: 0px;
     z-index: 3;
+    animation: dogmove 25s linear;
+    
 }
 .bike {
 	width: 300px;
@@ -20,12 +22,29 @@
 	left: 0px;
 	top: 450px;
 	z-index: 2;
+	animation: bikemove 25s ease-in-out;
 }
 .stroller {
 	width: 300px;
 	height: 350px;
 	position: absolute;
-	top: 350px;
+	top: 355px;
 	right: 0px;
 	z-index: 1;
+	animation: strollermove 25s ease-in-out; 
+}
+
+@keyframes dogmove {
+	from {right: 0;}
+	to {right: 1325px;}
+}
+
+@keyframes strollermove {
+	from {right: 0;}
+	to {right: 1325px;}
+}
+
+@keyframes bikemove {
+	from {left: 0;}
+	to {left: 1325px;}
 }
